@@ -1,0 +1,485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+
+
+
+
+/* CUSTOM SCROLL BAR CSS */
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(5, 115, 200); 
+    border-radius: 15px; 
+}
+
+
+/* END OF CUSTOM SCROLLBAR */
+
+navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+
+}
+
+
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    position: -webkit-sticky; /* For older browsers */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97vw;
+    background-color: #0865b6;
+    padding: 10px;
+    height: 65px;
+    border: none;
+    border-radius: 35px;
+    margin: 5px auto;
+    overflow: visible; /* Ensure overflow is set to visible */
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-around;
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+
+.nav-container .nav-links ul li{
+    list-style: none;
+}
+
+.nav-container .nav-links ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.nav-container .nav-links ul li a:hover{
+    scale: 110%;
+    color: black;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 2vw;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+.nav-links{
+    display: flex;
+    margin-left: auto;
+    margin-right: 4vw;
+    align-items: center;
+}
+
+h2{
+    color: rgb(232, 232, 232);
+    font-size: 1.3rem;
+}
+
+/* Button to switch to dark mode */
+#modebtn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(25, 24, 24);
+    display: none;
+}
+
+.header-logo{
+    width: 50px;
+    height: auto;
+    margin-inline: 1.5vw;
+}
+
+.dark-mode{
+    color: white;
+    background-color: rgb(16, 15, 15);
+}
+
+.light-mode{
+    color: black;
+    background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.limeborder{
+    border: 2px solid lime;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    min-height: 60vh;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: auto;
+    padding: 8vw;
+}
+
+.img img{
+    width: 90%;
+    border-radius: 100%;
+    border: 4px solid #127fae;
+    box-shadow: 0 0 15px 5px #127fae;
+}
+
+.intro-text{
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 650;
+}
+
+span{
+    color: rgb(252, 252, 252);
+    font-weight: 750;
+    font-size: 2rem;
+    transition: 0.3s linear;
+}
+
+.social-media{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.social-media i{
+    padding: 0 15px;
+    font-size: 3.2rem;
+    overflow: hidden;
+    height: 4rem;
+}
+
+#insta:hover{
+    color: #C13584;
+}
+
+#whatsapp:hover{
+    color: #0e7f22;
+}
+
+#yt:hover{
+    color: red;
+}
+
+#linkedin:hover{
+    color: #0E76A8;
+}
+
+#twitter:hover{
+    color: rgb(15, 141, 183);
+}
+
+#facebook:hover{
+    color: #0865b6;
+}
+
+.hero-btns button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #0865b6;
+    color: white;
+    margin: 15px;
+}
+.hero-btns button:hover{
+    background-color: rgba(229, 24, 24, 0.849);
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.about{
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 0;
+}
+
+.about-text{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+#about{
+    background-color: rgba(246, 245, 249, 0.474);
+    color: rgb(0, 0, 0);
+
+}
+
+#projects{
+    display: block;
+    padding: 30px 5vw;
+
+}
+
+#projects h1{
+    margin-bottom: 21px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 5%;
+    gap: 15px;
+    color: rgb(1, 0, 0);
+    overflow: hidden;
+    background-color: rgba(248, 248, 248, 0.435);
+}
+
+.card:hover{
+   outline: 3px solid #0865b6;
+}
+
+footer{
+    height: 70px;
+    background-color: rgb(24, 24, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    bottom: 0px;
+}
+footer b{
+    color: #147ff9;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i{
+    font-size: 2.5rem;
+    height: 2.6rem;
+    transition: 0.5s linear;
+}
+
+
+
+.intro-text{
+    font-size: 1.4rem;
+}
+
+
+
+/* Contact Form Styling */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    border: none;
+}
+.contact-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-form formbox{
+    background-color: #dad4e070;
+    width: 90vmin;
+    display: flex;
+    flex-direction: column;
+    min-height: 450px ;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+
+}
+
+.contact-form formbox h1{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #66696c;
+}
+
+input, textarea, #submit{
+    padding: 0 10px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+label{
+    padding: 10px 0;
+}
+
+#message{
+    height: 100px;
+}
+
+#submit{
+   background-color: #0865b6;
+   color: white;
+
+}
+input::placeholder, textarea::placeholder{
+    color: rgb(87, 85, 85);
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus, #submit:focus{
+    outline: none;
+    border: 1px solid black;    
+    caret-color: transparent;
+}
+
+
+
+/* Styling for the Alert Box */
+/* Default styling to hide the custom alert initially */
+.alert-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #d7e9f8;
+    color: #020000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: 1.1rem;
+    outline: 0.8px solid black;
+  }
+  
+  .alert-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .alert-box button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0d73e7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .alert-box button:hover {
+    background-color: #659af0;
+  }
+  
+
+
+
+  /* media queries */
+@media (max-width: 970px) {
+    span{
+        color: #0865b6;
+        font-size: 1.4rem;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .img{
+        width: 90vw;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    #about p{
+        padding: 0 0 20px 0;
+        font-size: 1rem;
+    }
+
+    .cards{
+        justify-content: center;
+        max-width: 95vw;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+    .alert-box{
+        font-size: 0.85rem;
+    }
+}
